@@ -3,7 +3,7 @@ import { Provider } from 'react-redux'
 import store from './store'
 import EstiloGlobal, { Container } from './styles'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Login from './pages/Login'
+import LoginPage from './pages/LoginPage'
 import Estoque from './pages/Estoque'
 import NovoMaterial from './pages/NovoMaterial'
 import EntradaOuSaida from './pages/EntradaOuSaida'
@@ -13,7 +13,7 @@ import EmFalta from './pages/EmFalta'
 const rotas = createBrowserRouter([
   {
     path: '/',
-    element: <Login />
+    element: <LoginPage />
   },
   {
     path: '/estoque',

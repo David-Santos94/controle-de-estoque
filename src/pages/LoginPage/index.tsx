@@ -1,7 +1,7 @@
 import FormLogin from '../../containers/FormLogin'
 import { FlexContainer } from '../../styles'
 
-const Login = () => {
+const LoginPage = () => {
   return (
     <FlexContainer>
       <FormLogin />
@@ -9,4 +9,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default LoginPage
