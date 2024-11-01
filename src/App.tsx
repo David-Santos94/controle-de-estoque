@@ -4,11 +4,11 @@ import store from './store'
 import EstiloGlobal, { Container } from './styles'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import LoginPage from './pages/LoginPage'
-import Estoque from './pages/Estoque'
-import NovoMaterial from './pages/NovoMaterial'
-import EntradaOuSaida from './pages/EntradaOuSaida'
-import NovaEntradaOuSaida from './pages/NovaEntradaOuSaida'
-import EmFalta from './pages/EmFalta'
+import EstoquePage from './pages/EstoquePage'
+import NovoMaterialPage from './pages/NovoMaterialPage'
+import EntradaOuSaidaPage from './pages/EntradaOuSaidaPage'
+import NovaEntradaOuSaidaPage from './pages/NovaEntradaOuSaidaPage'
+import EmFaltaPage from './pages/EmFaltaPage'
 
 const rotas = createBrowserRouter([
   {
@@ -17,23 +17,23 @@ const rotas = createBrowserRouter([
   },
   {
     path: '/estoque',
-    element: <Estoque />
+    element: <EstoquePage />
   },
   {
     path: '/novomaterial',
-    element: <NovoMaterial />
+    element: <NovoMaterialPage />
   },
   {
     path: '/entradasaida',
-    element: <EntradaOuSaida />
+    element: <EntradaOuSaidaPage />
   },
   {
     path: '/novaentradasaida',
-    element: <NovaEntradaOuSaida />
+    element: <NovaEntradaOuSaidaPage />
   },
   {
     path: '/emfalta',
-    element: <EmFalta />
+    element: <EmFaltaPage />
   }
 ])
 

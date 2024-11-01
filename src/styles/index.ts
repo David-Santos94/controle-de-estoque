@@ -20,13 +20,21 @@ export const Container = styled.div`
 `
 export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: 224px auto;
+  grid-template-columns: 360px auto;
 `
 export const FlexContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+`
+
+export const GridContent = styled.div`
+  display: grid;
+  grid-template-columns: 710px 350px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  margin: 20px 20px 20px 0;
 `
 
 export const Titulo = styled.h1`
@@ -47,6 +55,8 @@ export const AllInput = styled.input`
   padding: 4px 0;
   border-radius: 8px;
   border-color: #000000;
+  border-style: solid;
+  border-width: 1px;
   font-size: 20px;
   letter-spacing: 0.34px;
   line-height: medium;
@@ -66,6 +76,15 @@ export const Botoes = styled.button<BotoesProps>`
   text-align: center;
   font-weight: bold;
   color: #ffffff;
+`
+
+export const DateToday = styled.span`
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 0.34px;
+  color: #101010;
+  opacity: 50%;
+  margin-top: 10px;
 `
 
 export default EstiloGlobal
